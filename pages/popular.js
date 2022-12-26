@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Layout from '../components/layouts/Layout';
 import ProductDetails from '../components/layouts/ProductDetails';
 import useProducts from '../hooks/useProducts';
 
-const Index = () => {
-  const { products } = useProducts('created');
+const Popular = () => {
+  const { products } = useProducts('votes');
 
   return (
     <div>
@@ -23,4 +23,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Popular;
